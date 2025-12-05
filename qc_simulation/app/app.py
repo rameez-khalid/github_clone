@@ -150,7 +150,7 @@ st.plotly_chart(fig, use_container_width=True)
 
 # --- Sample image with selector + label lookup ---
 st.subheader("Sample Part Image")
-images_dir = "../images"
+images_dir = "qc_simulation/images"
 image_files = []
 if os.path.isdir(images_dir):
     image_files = [f for f in os.listdir(images_dir) if f.lower().endswith((".png", ".jpg", ".jpeg"))]
