@@ -1,0 +1,2 @@
+timestamp,team,confidence_threshold,manual_band_low,manual_band_high,vibration_weight,acoustic_weight,sampling_rate,accuracy,recall,precision,false_negatives,takt_time,jobs_per_hour,inspection_cost,defect_cost
+2025-12-05 01:24:12,Demo_Team,0.61,0.5,0.62,0.7,0.3,0.25,36.7,89.5,32.1,2,47.8,75.4,275.0,200
