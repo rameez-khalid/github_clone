@@ -1,6 +1,6 @@
 import streamlit as st
 import plotly.express as px
-from Agentic_AI.qc_simulation.app.backend_works import load_sensor_data, compute_metrics
+from Agentic_AI.qc_simulation.app.backend_works1 import load_sensor_data, compute_metrics
 
 st.title("AI-Enabled Quality Control Simulator")
 
