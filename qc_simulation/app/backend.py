@@ -55,7 +55,7 @@ def compute_metrics(df, confidence_threshold, manual_band, vibration_weight, aco
     }
 
 # --- Participant logging ---
-def log_run(team_name, confidence_threshold, manual_band, vibration_weight, acoustic_weight, sampling_rate, results, log_path="../logs/participant_runs.csv"):
+def log_run(team_name, confidence_threshold, manual_band, vibration_weight, acoustic_weight, sampling_rate, results, log_path="qc_simulation/logs/participant_runs.csv"):
     os.makedirs(os.path.dirname(log_path), exist_ok=True)
 
     log_entry = {
@@ -84,7 +84,7 @@ def log_run(team_name, confidence_threshold, manual_band, vibration_weight, acou
         df_log.to_csv(log_path, mode="w", header=True, index=False)
 
 # --- View logged runs ---
-def view_logs(log_path="../logs/participant_runs.csv"):
+def view_logs(log_path="qc_simulation/logs/participant_runs.csv"):
     if os.path.exists(log_path):
         return pd.read_csv(log_path)
     else:
