@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 
 # --- Load sensor data ---
-def load_sensor_data(csv_path="../sensor_logs/sensor_logs.csv"):
+def load_sensor_data(csv_path="qc_simulation/sensor_logs/sensor_logs.csv"):
     try:
         df = pd.read_csv(csv_path)
         return df
